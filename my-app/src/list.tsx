@@ -14,6 +14,7 @@ function ProductList() {
             <h4 className="mb-2 fw-bold">{product.name}</h4> 
             <p className="mb-2 text-secondary">{product.description}</p>
             <p className="mb-0 text-success fw-semibold">Rps{product.price}</p>
+            <button className="button btn btn-primary mt-2 ">Add to Cart</button>
           </div>
         ))}
       </div>
