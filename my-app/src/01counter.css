@@ -1,0 +1,77 @@
+/* Center the heading */
+/* h1.text-center {
+  margin: 20px 0;
+  font-size: 2.5rem;
+  font-weight: bold; */
+/* } */
+
+/* Course cards container styling */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+/* Card styling */
+.card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Selected card with blue background */
+.card.text-bg-info {
+  background-color: #00bfff;
+  color: white;
+}
+
+/* Image styling */
+.card-img-top {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Card body */
+.card-body {
+  padding: 15px;
+}
+
+/* Course name */
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Rating */
+.card-link {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Duration */
+.card-subtitle {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Summary text */
+.card-text {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
