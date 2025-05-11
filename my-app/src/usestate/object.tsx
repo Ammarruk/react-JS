@@ -20,6 +20,6 @@ const UserProfile = () => {
       <p>Name: {user.name}, Age: {user.age}</p>
     </div>
   );
-};
+};  
 
 export default UserProfile;

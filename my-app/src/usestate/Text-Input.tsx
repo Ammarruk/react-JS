@@ -14,6 +14,6 @@ const TextInput = () => {
       <p>You typed: {text}</p>
     </div>
   );
-};
+};  
 
 export default TextInput;

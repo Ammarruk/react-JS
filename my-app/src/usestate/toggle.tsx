@@ -12,3 +12,4 @@ const ToggleTheme = () => {
 };
 
 export default ToggleTheme;
+  

@@ -12,7 +12,7 @@ const ItemList = () => {
   };
 
   return (
-    <div>
+    <div>  
       <input
         type="text"
         placeholder="Enter item"
