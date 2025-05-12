@@ -1,0 +1,39 @@
+.App {
+  text-align: center;
+  background-color:#111111;
+  height: 100vh;
+}
+
+.App-header {
+  background-color: #111111;
+  padding: 20px;
+  font-size: 2em;
+  color: #327aba;
+}
+
+.status {
+  font-size: 1.5em;
+  margin: 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 40px;
+}
+
+.switch {
+  width: 150px;
+  cursor: pointer;
+}
+
+.bulb {
+  width: 120px;
+}
+
+.App-footer {
+  background-color: #1c1e1f;
+  height: 40px;
+}
