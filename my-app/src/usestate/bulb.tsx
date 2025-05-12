@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './usestate/bulb.css';
+import '/bulb.css';
 
 const Bulb: React.FC = () => {
   const [isOn, setIsOn] = useState(false);
