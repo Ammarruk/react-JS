@@ -6,7 +6,7 @@ interface UserProps {
 }
 
 function UserInfo() {
-  const users: UserProps[] = [
+  const users: UserProps[] = [  
     {
       course: "Frontend Development Course",
       summary: "We offer modern and responsive frontend development services using the latest technologies like React, HTML, CSS, and JavaScript.",

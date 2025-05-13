@@ -12,7 +12,7 @@ interface UserProps{
     { id: 3, name: "Smartwatch", description: "The Apple Watch blends cutting-edge technology with elegant design, offering health tracking, fitness features, and seamless connectivity. Stay updated, monitor your health, and control your devices—all from your wrist.", price: 19999 },
   ,]
 
-  return (
+  return (  
     <div className="container mt-4">
         <h1 className="text-center bg-primary text-white border border-dark p-3">Our Products </h1>
       <div className="list-group">
