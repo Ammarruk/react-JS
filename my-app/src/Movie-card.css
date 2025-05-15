@@ -1,0 +1,11 @@
+.movieCard-title {
+    text-align: center;
+    background-color: white;
+    color: #004288;
+}
+
+.movieCard-title:hover {
+    text-align: center;
+    background-color:  #0071e2;
+    color: white;   
+}

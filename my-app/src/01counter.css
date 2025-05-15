@@ -1,9 +1,10 @@
 /* Center the heading */
-/* h1.text-center {
+
+h1.text-center {
   margin: 20px 0;
   font-size: 2.5rem;
   font-weight: bold; */
-/* } */
+}
 
 /* Course cards container styling */
 .row {
@@ -75,3 +76,5 @@
   font-size: 0.95rem;
   line-height: 1.4;
 }
+
+
