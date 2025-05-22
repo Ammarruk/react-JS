@@ -10,7 +10,7 @@ const Bulb: React.FC = () => {
   const [isOn, setIsOn] = useState(false);
 
   const toggleSwitch = () => setIsOn(!isOn);
-
+  
   return (
     <div className="bulb-container">
       <header className="bulb-header">My React App</header>

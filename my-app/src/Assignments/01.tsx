@@ -3,7 +3,7 @@
 // Create a Product or a Course component and display info in a BS Card or any suitable Component
 
 function UserInfo1(){
-    const user = {
+    const user = {     
         name:"Mohammed Ammar ",
         summary:"web developer web developer  web developer  web developer web developer   ",
         imageUrl:"https://images.pexels.com/photos/593655/pexels-photo-593655.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",

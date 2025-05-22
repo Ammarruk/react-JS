@@ -5,7 +5,7 @@ interface MovieInfoProps {
     poster: string;
     rating: number;
     overview: string;
-}
+}  
 
 function MovieInfo(props: MovieInfoProps) {
     return (

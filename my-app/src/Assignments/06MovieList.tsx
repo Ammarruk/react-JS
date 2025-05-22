@@ -5,7 +5,7 @@ import type { MovieStructure } from './Movie-Structure';
 import "./Movie-card.css"
 import MovieCard from "./Movie-cards";
 
-function MovieList() {
+function MovieList() {  
   let movieList: MovieStructure[] = [
     {
       title: "Dhoom",

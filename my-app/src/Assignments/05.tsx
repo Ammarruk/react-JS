@@ -6,7 +6,7 @@ interface UserProps {
   courseImageUrl: string;
   portfolioUrl: string;
 }
-
+  
 function UserInfo() {
   const users: UserProps[] = [  
     {

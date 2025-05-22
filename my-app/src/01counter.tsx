@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function App() {
+function CounterApp() {
   const [count, setCount] = useState(100);
 
   const increment = () => setCount(prevCount => prevCount + 1);
@@ -42,4 +42,4 @@ const styles = {
   }
 };
 
-export default App;
+export default CounterApp;
