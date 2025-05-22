@@ -52,12 +52,12 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // Importing all components
-import Navbar from "./Assignments/07Assignments/Nav";
-import Hero from "./Assignments/07Assignments/Hero";
-import Services from "./Assignments/07Assignments/Services";
-import Contact from "./Assignments/07Assignments/1Contact";
-import About from "./Assignments/07Assignments/About";
-import Footer from "./Assignments/07Assignments/Footer";
+import Navbar from "./07Assignments/Nav";
+import Hero from "./07Assignments/Hero";
+import Services from "./07Assignments/Services";
+import Contact from "./07Assignments/1Contact";
+import About from "./07Assignments/About";
+import Footer from "./07Assignments/Footer";
 
 function App() {
   return (
