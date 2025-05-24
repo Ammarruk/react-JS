@@ -48,7 +48,6 @@
 
 // export default App;
 
-import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // Importing all components
@@ -62,7 +61,7 @@ import Footer from "./07Assignments/Footer";
 function App() {
   return (
     <BrowserRouter> 
-      <Navbar /> {/* Always show */}
+      <Navbar /> 
       
       <Routes>
         <Route path="/" element={<Hero />} />
@@ -71,7 +70,7 @@ function App() {
         <Route path="/about" element={<About />} />
       </Routes>
 
-      <Footer /> {/* Always show */}
+      <Footer />
     </BrowserRouter>
   );
 }
