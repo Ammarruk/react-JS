@@ -61,7 +61,7 @@ import Footer from "./07Assignments/Footer";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter> 
       <Navbar /> {/* Always show */}
       
       <Routes>
