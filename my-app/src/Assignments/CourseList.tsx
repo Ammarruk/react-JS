@@ -6,6 +6,7 @@ interface Course {
   title: string;
   description: string;
   price: number;
+  validation: string; // Added validation field
 }
 
 const CourseList = () => {
@@ -106,6 +107,7 @@ const CourseList = () => {
                 <th scope="col">Title</th>
                 <th scope="col">Description</th>
                 <th scope="col">Price</th>
+                <th scope="col">Duration</th> {/* New Column */}
                 <th scope="col" className="text-center">Actions</th>
               </tr>
             </thead>
@@ -116,21 +118,22 @@ const CourseList = () => {
                   <td><strong>{course.title}</strong></td>
                   <td>{course.description}</td>
                   <td><span className="text-success">${course.price}</span></td>
-                  <td className="text-center">
-                    <Link
-                      to={`/edit-course/${course.id}`}
-                      className="btn btn-warning btn-sm me-2"
-                    >
-                      <i className="bi-pencil-square me-1"></i>Edit
-                    </Link>
-                    <button
-                      onClick={() => deleteCourse(course.id)}
-                      className="btn btn-danger btn-sm"
-                      disabled={isLoading}
-                    >
-                      <i className="bi-trash me-1"></i>Delete
-                    </button>
-                  </td>
+                  <td>{course.validation ?? "N/A"}</td> 
+                 <td className="text-center">
+  <div className="d-flex justify-content-center">
+    <Link to={`/edit-course/${course.id}`} className="btn btn-warning btn-sm me-2">
+      <i className="bi bi-pencil-fill me-1"></i>Edit
+    </Link>
+    <button
+      onClick={() => deleteCourse(course.id)}
+      className="btn btn-danger btn-sm"
+      disabled={isLoading}
+    >
+      <i className="bi bi-trash-fill me-1"></i>Delete
+    </button>
+  </div>
+</td>
+
                 </tr>
               ))}
             </tbody>
