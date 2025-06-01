@@ -5,42 +5,31 @@ import { useNavigate } from "react-router-dom";
 const API_URL = "https://683b576a28a0b0f2fdc46ffc.mockapi.io/products";
 
 const CourseAdd = () => {
-  // State to store the course title input
+  // State to store the course inputs
   const [title, setTitle] = useState<string>("");
-  // State to store the course description input
   const [description, setDescription] = useState<string>("");
+  const [price, setPrice] = useState<string>("");
 
-  // Hook to navigate to a different route after adding a course
   const navigate = useNavigate();
 
-  // Function to add a new course by sending a POST request to the API
+  // Function to add a new course
   const addCourse = async () => {
-    // Create a course object from the input fields
-    const course = {
-      title,
-      description,
-    };
+    const course = { title, description, price };
 
-    // Send POST request to add the course
     await fetch(API_URL, {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify(course),
     });
 
-    // Navigate back to the courses list after adding
     navigate("/courses");
   };
 
   return (
     <div className="container my-5">
-      <h2 className="text-primary my-4">Add Course</h2>
-      {/* Form to add a new course */}
-      <div id="addCourseform" className="border border-1 rounded shadow p-4">
-        {/* Input for course title */}
-        <div className="mb-4">
+      <h2 className="text-primary text-center my-4">Add New Course</h2>
+      <div className="card shadow-lg p-4">
+        <div className="mb-3">
           <label htmlFor="titleTextBox" className="form-label fw-bold">
             Course Title
           </label>
@@ -50,11 +39,10 @@ const CourseAdd = () => {
             className="form-control"
             placeholder="Enter Course Title like Java, Python, React, etc"
             value={title}
-            onChange={(event) => setTitle(event.target.value)} // Update title state on change
+            onChange={(e) => setTitle(e.target.value)}
           />
         </div>
-        {/* Input for course description */}
-        <div className="mb-4">
+        <div className="mb-3">
           <label htmlFor="descriptionTextBox" className="form-label fw-bold">
             Course Description
           </label>
@@ -64,17 +52,28 @@ const CourseAdd = () => {
             className="form-control"
             placeholder="Enter Course Description such as topics"
             value={description}
-            onChange={(event) => setDescription(event.target.value)} // Update description state on change
+            onChange={(e) => setDescription(e.target.value)}
           />
         </div>
-        {/* Button to add the course */}
-        <div className="mt-5">
-          <button className="btn btn-primary w-100" onClick={() => addCourse()}>
-            Add Course
-          </button>
+        <div className="mb-4">
+          <label htmlFor="priceTextBox" className="form-label fw-bold">
+            Course Price ($)
+          </label>
+          <input
+            type="number"
+            id="priceTextBox"
+            className="form-control"
+            placeholder="Enter Course Price"
+            value={price}
+            onChange={(e) => setPrice(e.target.value)}
+          />
         </div>
+        <button className="btn btn-success w-100 fw-bold" onClick={addCourse}>
+          Add Course
+        </button>
       </div>
     </div>
   );
 };
+
 export default CourseAdd;
